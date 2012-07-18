@@ -76,7 +76,7 @@ Image ImageReader_qt_p::loadMaster ()
 
 ImageReader_qt::ImageReader_qt (QObject *parent)
 {
-    p = new ImageLoader_generic_p();
+    p = new ImageReader_qt_p();
 }
 
 ImageReader_qt::~ImageReader_qt()
