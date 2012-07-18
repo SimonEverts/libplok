@@ -7,6 +7,8 @@ class ImageReader_qt_p;
 
 class ImageReader_qt : public ImageReader
 {
+        Q_OBJECT
+
 public:
     explicit ImageReader_qt (QObject *parent = 0);
     virtual ~ImageReader_qt (void);
