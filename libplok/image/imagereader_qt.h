@@ -7,7 +7,8 @@ class ImageReader_qt_p;
 
 class ImageReader_qt : public ImageReader
 {
-        Q_OBJECT
+    Q_OBJECT
+
     Q_INTERFACES(ImageReader)
 
 public:
