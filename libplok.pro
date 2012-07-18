@@ -12,10 +12,12 @@ DEFINES += LIBPLOK_LIBRARY
 SOURCES += 	image/image.cpp \
                 image/imagereader.cpp \
                 image/imagereader_qt.cpp \
-    image/imagereaderfactory.cpp
+                image/imageprovider.cpp \
+				image/imagereaderfactory.cpp
 
 HEADERS += 	image/image.h \
                 image/imagereader.h \
                 image/imagereader_qt.h \
-    image/imagereaderfactory.h
+                image/imageprovider.h \
+				image/imagereaderfactory.h
 
