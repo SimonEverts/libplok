@@ -11,5 +11,5 @@ DEFINES += PLUGINS_LIBRARY
 
 SOURCES += imagereader/imagereader_qt.cpp
 
-HEADERS += imagereader/imagerader.h.cpp
+HEADERS += imagereader/imagerader_qt.h
 
