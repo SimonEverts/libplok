@@ -1,5 +1,6 @@
 
 TEMPLATE = subdirs
 
-SUBDIRS += libplok
+SUBDIRS += libplok \
+    plugins
 
