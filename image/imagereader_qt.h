@@ -8,6 +8,7 @@ class ImageReader_qt_p;
 class ImageReader_qt : public ImageReader
 {
         Q_OBJECT
+    Q_INTERFACES(ImageReader)
 
 public:
     explicit ImageReader_qt (QObject *parent = 0);
