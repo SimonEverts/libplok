@@ -1,7 +1,6 @@
 #ifndef IMAGEPROVIDER_H
 #define IMAGEPROVIDER_H
 
-//#include <QDeclarativeImageProvider>
 #include <QImage>
 
 #include "image.h"
