@@ -28,4 +28,7 @@ public:
     virtual QStringList supportedFormats (void) = 0;
 };
 
+
+Q_DECLARE_INTERFACE(ImageReader,
+                    "org.plok.plugins.imagereader/1.0")
 #endif // IMAGEREADER_H
