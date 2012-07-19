@@ -2,12 +2,15 @@
 #define IMAGEREADER_QT_H
 
 #include "image/imagereader.h"
+#include <QObject>
+#include <QtPlugin>
 
 class ImageReader_qt_p;
 
-class ImageReader_qt : public ImageReader
+class ImageReader_qt : public QObject, public ImageReader
 {
         Q_OBJECT
+        Q_PLUGIN_METADATA(IID "org.plok.plugins.imagereader" FILE "../imagereader.json")
     Q_INTERFACES(ImageReader)
 
 public:

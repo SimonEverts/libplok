@@ -10,7 +10,6 @@ TEMPLATE = lib
 DEFINES += LIBPLOK_LIBRARY
 
 SOURCES += 	image/image.cpp \
-                image/imagereader.cpp \
                 image/imagereaderfactory.cpp
 
 HEADERS += 	image/image.h \

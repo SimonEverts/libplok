@@ -3,7 +3,7 @@ TEMPLATE = subdirs
 
 SUBDIRS +=      libplok \
                 plugins \
-    plokgui
+                plokgui
 
 
 
