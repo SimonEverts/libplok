@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-TARGET = ../build/plugins
+TARGET = ../build/plugins/plugins
 TEMPLATE = lib
 CONFIG  += plugin
 DEFINES += PLUGINS_LIBRARY
