@@ -1,7 +1,7 @@
 #ifndef IMAGEREADER_QT_H
 #define IMAGEREADER_QT_H
 
-#include "imagereader.h"
+#include "image/imagereader.h"
 
 class ImageReader_qt_p;
 

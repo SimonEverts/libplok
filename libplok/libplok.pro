@@ -4,20 +4,16 @@
 #
 #-------------------------------------------------
 
-TARGET = libplok
+TARGET = ../build/plok
 TEMPLATE = lib
 
 DEFINES += LIBPLOK_LIBRARY
 
 SOURCES += 	image/image.cpp \
                 image/imagereader.cpp \
-                image/imagereader_qt.cpp \
-                image/imageprovider.cpp \
                 image/imagereaderfactory.cpp
 
 HEADERS += 	image/image.h \
                 image/imagereader.h \
-                image/imagereader_qt.h \
-                image/imageprovider.h \
                 image/imagereaderfactory.h
 
