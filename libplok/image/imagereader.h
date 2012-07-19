@@ -10,12 +10,9 @@
 
 #include "image.h"
 
-class ImageReader : public QObject
+class ImageReader
 {
-    Q_OBJECT
 public:
-    explicit ImageReader(QObject *parent = 0);
-    virtual ~ImageReader (void);
 
     virtual void openImage (QString imagePath) = 0;
 

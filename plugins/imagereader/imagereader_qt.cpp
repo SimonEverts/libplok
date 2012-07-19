@@ -4,10 +4,10 @@
 #include <QImageReader>
 
 #include <QElapsedTimer>
-#include <QDebug>
 
 class ImageReader_qt_p
 {
+
 public:
     ImageReader_qt_p() {
         m_random = qrand();
@@ -23,6 +23,7 @@ private:
 
     int m_random;
 };
+
 
 
 void ImageReader_qt_p::openImage (QString imagePath)
@@ -119,4 +120,6 @@ QStringList ImageReader_qt::supportedFormats (void)
         filter << supported_formats.at(i);
 
     return filter;
+
 }
+

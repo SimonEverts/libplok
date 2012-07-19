@@ -4,12 +4,18 @@
 #
 #-------------------------------------------------
 
-TARGET = plugins
+TARGET = ../build/plugins
 TEMPLATE = lib
-
+CONFIG  += plugin
 DEFINES += PLUGINS_LIBRARY
 
 SOURCES += imagereader/imagereader_qt.cpp
 
-HEADERS += imagereader/imagerader_qt.h
+HEADERS += imagereader/imagereader_qt.h
 
+INCLUDEPATH += ../libplok
+
+LIBS += -L. -L../build -lplok
+OTHER_FILES += \
+    imagereader.json
+INSTALLS += target sources
