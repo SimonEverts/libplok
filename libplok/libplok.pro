@@ -4,15 +4,20 @@
 #
 #-------------------------------------------------
 
-TARGET = ../build/plok
+TARGET = plok
+DESTDIR = ../build
 TEMPLATE = lib
 
 DEFINES += LIBPLOK_LIBRARY
 
 SOURCES += 	image/image.cpp \
-                image/imagereaderfactory.cpp
+                image/imagereaderfactory.cpp \
+    core/pluginloader.cpp
 
 HEADERS += 	image/image.h \
                 image/imagereader.h \
-                image/imagereaderfactory.h
+                image/imagereaderfactory.h \
+    image/library.h \
+    image/imageresolver.h \
+    core/pluginloader.h
 

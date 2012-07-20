@@ -1,8 +1,7 @@
 #ifndef IMAGEREADER_H
 #define IMAGEREADER_H
 
-#include <QObject>
-#include <QString>
+
 #include <QStringList>
 
 #include <QMap>
@@ -26,6 +25,5 @@ public:
 };
 
 
-Q_DECLARE_INTERFACE(ImageReader,
-                    "org.plok.plugins.imagereader/1.0")
+Q_DECLARE_INTERFACE(ImageReader, "org.plok.plugins.imagereader/1.0")
 #endif // IMAGEREADER_H

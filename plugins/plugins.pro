@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-TARGET = ../build/plugins/plugins
+TARGET = plugins
+DESTDIR = ../build/plugins
 TEMPLATE = lib
 CONFIG  += plugin
 DEFINES += PLUGINS_LIBRARY

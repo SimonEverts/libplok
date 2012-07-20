@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainWindow.qml</file>
+        <file>camera.png</file>
+        <file>StatusBar.qml</file>
+    </qresource>
+</RCC>
