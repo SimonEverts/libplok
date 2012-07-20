@@ -21,9 +21,8 @@ FORMS    += mainwindow.ui
 
 INCLUDEPATH += ../libplok
 
-LIBS += -L../builb -L.-lplok
+LIBS += -L. -L../build -lplok
 TARGET = ../build/gui
-
 mac {
   CONFIG -= app_bundle
 }
