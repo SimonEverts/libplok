@@ -10,9 +10,11 @@ TEMPLATE = lib
 CONFIG  += plugin
 DEFINES += PLUGINS_LIBRARY
 
-SOURCES += imagereader/imagereader_qt.cpp
+SOURCES += imagereader/imagereader_qt.cpp \
+    imagereader/defaultplokplugin.cpp
 
-HEADERS += imagereader/imagereader_qt.h
+HEADERS += imagereader/imagereader_qt.h \
+    imagereader/defaultplokplugin.h
 
 INCLUDEPATH += ../libplok
 

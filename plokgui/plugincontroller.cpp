@@ -8,8 +8,8 @@ PluginController::PluginController(QObject *parent) :
 {
     pluginLoader = new PluginLoader();
 
-    QObject::connect(pluginLoader, SIGNAL(pluginLoaded(QString)),
-                          this, SLOT(addPlugin(QString)));
+    QObject::connect(pluginLoader, SIGNAL(pluginLoaded(PlokPlugin*)),
+                          this, SLOT(addPlugin(PlokPlugin*)));
 
 
 }
@@ -26,8 +26,8 @@ void PluginController::startLoading()
     pluginLoader->loadPlugins();
 }
 
-void PluginController::addPlugin(QString strin)
+void PluginController::addPlugin(PlokPlugin * strin)
 {
 
-    emit statusUpdated(strin);
+    emit statusUpdated(QString("hoi"));
 }

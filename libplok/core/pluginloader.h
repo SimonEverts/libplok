@@ -2,6 +2,7 @@
 #define PLUGINLOADER_H
 
 #include <QObject>
+#include "core/plokplugin.h"
 
 class PluginLoader: public QObject
 {
@@ -12,7 +13,7 @@ public:
     void loadPlugins();
 
 signals:
-    void pluginLoaded(QString);
+    void pluginLoaded(PlokPlugin*);
 
 };
 

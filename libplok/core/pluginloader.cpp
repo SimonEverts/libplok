@@ -21,7 +21,8 @@ void PluginLoader::loadPlugins()
         QPluginLoader pluginLoader(pluginsDir.absoluteFilePath(fileName));
         QObject *plugin = pluginLoader.instance();
         if (plugin) {
-            emit pluginLoaded(QString("Plugins loaded"));
+            PlokPlugin * plokPlugin = qobject_cast<PlokPlugin *>(plugin);
+            emit pluginLoaded(plokPlugin);
         } else {
             qDebug() << pluginLoader.errorString();
         }
