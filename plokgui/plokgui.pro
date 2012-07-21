@@ -4,25 +4,32 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+ QT += gui quick
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = plokgui
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += main.cpp \
+    plugincontroller.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    plugincontroller.h
 
-FORMS    += mainwindow.ui
 
 INCLUDEPATH += ../libplok
 
 LIBS += -L. -L../build -lplok
-TARGET = ../build/gui
+TARGET = gui
+DESTDIR = ../build
 mac {
   CONFIG -= app_bundle
 }
+
+OTHER_FILES += \
+    qml/MainWindow.qml \
+    qml/StatusBar.qml
+
+RESOURCES += \
+    qml/plok.qrc

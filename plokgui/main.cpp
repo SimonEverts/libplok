@@ -1,26 +1,18 @@
 #include <QApplication>
-#include "mainwindow.h"
-#include <QtGui>
-#include "image/image.h"
-#include <QDebug>
+#include <QQuickView>
+#include <QtQuick>
+#include <QLabel>
+#include <QSplashScreen>
+
+#include "plugincontroller.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    QDir pluginsDir(qApp->applicationDirPath());
-    qDebug() << "Loading plugins";
-    pluginsDir.cd("plugins");
-    qDebug() << pluginsDir.entryList(QDir::Files);
-    foreach (QString fileName, pluginsDir.entryList(QDir::Files)) {
-        QPluginLoader pluginLoader(pluginsDir.absoluteFilePath(fileName));
-        QObject *plugin = pluginLoader.instance();
-        if (plugin) {
-            qDebug() << "hoi";
-        } else {
-            qDebug() << pluginLoader.errorString();
-        }
-    }
+    qmlRegisterType<PluginController>("Plugins", 1,0, "PluginController");
+    QQuickView view;
+    view.setSource(QUrl("qrc:/MainWindow.qml"));
+    view.setResizeMode(QQuickView::SizeRootObjectToView);
+    view.show();
 
     return a.exec();
 }
