@@ -25,5 +25,4 @@ public:
 };
 
 
-Q_DECLARE_INTERFACE(ImageReader, "org.plok.plugins.imagereader/1.0")
 #endif // IMAGEREADER_H

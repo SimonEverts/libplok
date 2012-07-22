@@ -8,5 +8,4 @@ public:
 
 }
 
-Q_DECLARE_INTERFACE(Library, "org.plok.plugins.library/1.0")
 #endif // LIBRARY_H

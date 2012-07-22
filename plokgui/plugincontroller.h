@@ -3,7 +3,9 @@
 
 #include <QObject>
 #include <QString>
+
 #include "core/pluginloader.h"
+#include "core/plokplugin.h"
 
 class PluginController : public QObject
 {
@@ -15,7 +17,7 @@ public:
 signals:
     void statusUpdated(const QString &status);
 public slots:
-   void addPlugin(QString);
+    void addPlugin(PlokPlugin*);
     void startLoading();
 
 private :

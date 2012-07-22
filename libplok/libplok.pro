@@ -11,7 +11,6 @@ TEMPLATE = lib
 DEFINES += LIBPLOK_LIBRARY
 
 SOURCES += 	image/image.cpp \
-                image/imagereaderfactory.cpp \
     core/pluginloader.cpp
 
 HEADERS += 	image/image.h \
@@ -19,5 +18,7 @@ HEADERS += 	image/image.h \
                 image/imagereaderfactory.h \
     image/library.h \
     image/imageresolver.h \
-    core/pluginloader.h
+    core/pluginloader.h \
+    core/plokplugin.h \
+    image/imageresolverfactory.h
 
